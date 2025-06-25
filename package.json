@@ -1,6 +1,7 @@
 {
   "name": "PixelPlanet",
   "version": "1.0.0",
+  "type": "module",
   "private": true,
   "engines": {
     "node": ">=10.16.0",

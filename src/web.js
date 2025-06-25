@@ -3,17 +3,11 @@
 import url from 'url';
 import path from 'path';
 import http from 'http';
-import { fileURLToPath } from 'url'; // For __dirname polyfill
-import { dirname } from 'path';    // For __dirname polyfill
-
-// Polyfill for __filename and __dirname in ES Modules
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
 
 import assets from './assets.json' assert { type: 'json' };
-import compression from 'compression'; // Changed back to import
-import express from 'express';         // Changed back to import
-import etag from 'etag';               // Changed back to import
+const compression = require('compression');
+const express = require('express');
+const etag  = require('etag');
 import forceGC from './core/forceGC.js';
 import logger from './core/logger.js';
 import rankings from './core/ranking.js';
