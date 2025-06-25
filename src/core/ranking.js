@@ -4,12 +4,12 @@
  */
 
 import Sequelize from 'sequelize';
-import Model from '../data/sequelize';
-import RegUser from '../data/models/RegUser';
-import logger from './logger';
+import Model from '../data/sequelize.js'; // Added .js extension
+import RegUser from '../data/models/RegUser.js'; // Added .js extension
+import logger from './logger.js'; // Added .js extension
 
-import { MINUTE } from './constants';
-import { DailyCron } from '../utils/cron';
+import { MINUTE } from './constants.js'; // Added .js extension
+import { DailyCron } from '../utils/cron.js'; // Added .js extension
 
 class Ranks {
   ranks: Array;
@@ -52,7 +52,6 @@ class Ranks {
     await this.updateRanking();
   }
 }
-
 
 const rankings = new Ranks();
 export default rankings;
