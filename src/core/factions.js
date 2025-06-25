@@ -3,9 +3,9 @@
  * @flow
  */
 
+import factionsData from '../data/factions.json' assert { type: 'json' };
 import Sequelize from 'sequelize';
 import { Faction, RegUser } from '../data/models';
-import factionsData from '../data/factions.json' assert { type: 'json' };
 
 export function isMemberOfFaction(faction, user) {
   return faction.hasUser(user, {
