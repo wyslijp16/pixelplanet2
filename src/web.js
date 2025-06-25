@@ -5,9 +5,9 @@ import path from 'path';
 import http from 'http';
 
 import assets from './assets.json' assert { type: 'json' };
-const compression = require('compression');
-const express = require('express');
-const etag  = require('etag');
+import compression from 'compression';
+import express from 'express';
+import etag from 'etag';
 import forceGC from './core/forceGC.js';
 import logger from './core/logger.js';
 import rankings from './core/ranking.js';
