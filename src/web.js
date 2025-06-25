@@ -7,7 +7,7 @@ import http from 'http';
 import assets from './assets.json' assert { type: 'json' };
 const compression = require('compression');
 const express = require('express');
-import etag from 'etag';
+const etag  = require('etag');
 import forceGC from './core/forceGC.js';
 import logger from './core/logger.js';
 import rankings from './core/ranking.js';
