@@ -5,7 +5,7 @@
 
 import factionsData from '../data/factions.json' assert { type: 'json' };
 import Sequelize from 'sequelize';
-import { Faction, RegUser } from '../data/models';
+import { Faction, RegUser } from '../data/models/index.js'; // Added .js extension
 
 export function isMemberOfFaction(faction, user) {
   return faction.hasUser(user, {
@@ -114,7 +114,7 @@ class Factions {
   }
 }
 
-const factions = new Factions();
+const factionsInstance = new Factions(); // Renamed to avoid conflict
 
-export default factions;
-export default factionsData;
+export { factionsData }; // Changed to named export
+export default factionsInstance; // Only one default export
