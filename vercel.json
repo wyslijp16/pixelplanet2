@@ -1,9 +1,20 @@
 {
+  "functions": {
+    "src/web.js": {
+      "runtime": "node tolerant", // Or your existing runtime
+      "includeFiles": [
+        "src/assets.json" // <--- Add this line
+        // If assets.json is in the root, it would be "assets.json"
+        // If it's in a different folder, adjust the path accordingly.
+      ]
+    }
+  },
   "builds": [
     {
       "src": "src/web.js",
       "use": "@vercel/node"
     }
+    // ... any other builds you have
   ],
   "routes": [
     {
