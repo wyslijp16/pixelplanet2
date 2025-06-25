@@ -5,7 +5,7 @@ import path from 'path';
 import http from 'http';
 
 import assets from './assets.json' assert { type: 'json' };
-import compression from 'compression';
+const compression = require('compression');
 import express from 'express';
 import etag from 'etag';
 import forceGC from './core/forceGC.js';
