@@ -6,11 +6,11 @@
         "targets": {
           "node": "current"
         },
-        "modules": false
+        "modules": false  // <-- C'EST ESSENTIEL
       }
     ],
     "@babel/typescript",
-    "@babel/react",
+    "@babel/react"
   ],
   "plugins": [
     "@babel/transform-flow-strip-types",
@@ -20,6 +20,6 @@
     "@babel/plugin-proposal-numeric-separator",
     "@babel/plugin-proposal-throw-expressions",
     ["@babel/plugin-proposal-class-properties", { "loose": true }],
-    "@babel/proposal-object-rest-spread",
+    "@babel/proposal-object-rest-spread"
   ]
 }
