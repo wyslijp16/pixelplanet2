@@ -1,12 +1,13 @@
 {
   "builds": [
     {
-      "src": "src/web.js",
+      "src": "dist/web.js",
       "use": "@vercel/node@3.0.12",
       "config": {
         "runtime": "nodejs18.x",
         "includeFiles": [
-          "src/**/*"
+          "dist/**/*",
+          "src/assets.json"
         ]
       }
     }
@@ -14,7 +15,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "src/web.js"
+      "dest": "dist/web.js"
     }
   ]
 }
