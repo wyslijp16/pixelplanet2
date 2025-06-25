@@ -13,8 +13,6 @@ import logger from './core/logger.js';
 import rankings from './core/ranking.js';
 import factions from './core/factions.js';
 import models from './data/models/index.js';
-import ranks from './util/ranks.js';
-import factions from './util/factions.js';
 
 import SocketServer from './socket/SocketServer.js';
 import APISocketServer from './socket/APISocketServer.js';
