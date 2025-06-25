@@ -3,7 +3,6 @@
 import url from 'url';
 import path from 'path';
 import http from 'http';
-import etag from 'etag';
 
 // import baseCss from './components/base.tcss';
 import forceGC from './core/forceGC.js';
@@ -14,6 +13,7 @@ import models from './data/models/index.js';
 import assets from './assets.json' assert { type: 'json' };
 import compression from 'compression';
 import express from 'express';
+import etag from 'etag';
 
 import SocketServer from './socket/SocketServer.js';
 import APISocketServer from './socket/APISocketServer.js';
