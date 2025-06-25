@@ -3,7 +3,7 @@
  * @flow
  */
 
-import Sequelize from 'sequelize';
+const Sequelize = require('sequelize');
 import Model from '../data/sequelize';
 import RegUser from '../data/models/RegUser';
 import logger from './logger';
