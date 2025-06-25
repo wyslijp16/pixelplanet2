@@ -13,7 +13,7 @@ import assets from './assets.json'; // eslint-disable-line import/no-unresolved
 import logger from './core/logger.js';
 import rankings from './core/ranking.js';
 import factions from './core/factions.js';
-import models from './data/models';
+import models from './data/models/index.js';
 
 import SocketServer from './socket/SocketServer';
 import APISocketServer from './socket/APISocketServer';
