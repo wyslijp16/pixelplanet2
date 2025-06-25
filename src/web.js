@@ -12,8 +12,6 @@ import forceGC from './core/forceGC.js';
 import logger from './core/logger.js';
 import rankings from './core/ranking.js';
 import factions from './core/factions.js';
-import { ranks } from './core/ranks.js';
-import { factions } from './core/factions.js';
 import models from './data/models/index.js';
 
 import SocketServer from './socket/SocketServer.js';
