@@ -6,7 +6,7 @@
       "config": {
         "runtime": "nodejs18.x",
         "includeFiles": [
-          "src/assets.json"
+          "src/**/*"
         ]
       }
     }
