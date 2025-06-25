@@ -2,8 +2,9 @@
   "builds": [
     {
       "src": "src/web.js",
-      "use": "@vercel/node",
+      "use": "@vercel/node@3.0.12",
       "config": {
+        "runtime": "nodejs18.x",
         "includeFiles": [
           "src/assets.json"
         ]
