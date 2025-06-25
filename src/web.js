@@ -3,6 +3,12 @@
 import url from 'url';
 import path from 'path';
 import http from 'http';
+import { fileURLToPath } from 'url'; // Polyfill pour __filename
+import { dirname } from 'path';    // Polyfill pour __dirname
+
+// Polyfill pour __filename et __dirname en mode ES Modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 import assets from './assets.json' assert { type: 'json' };
 import compression from 'compression';
