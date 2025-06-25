@@ -117,3 +117,4 @@ class Factions {
 const factions = new Factions();
 
 export default factions;
+export default factionsData;
