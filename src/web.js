@@ -25,7 +25,7 @@ import {
   admintools,
   resetPassword,
   templateChunks,
-} from './routes';
+} from './routes/index.js';
 import globeHtml from './components/Globe.jsx';
 import generateMainPage from './components/Main.jsx';
 
