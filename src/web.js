@@ -2,7 +2,6 @@
 
 import url from 'url';
 import path from 'path';
-import compression from 'compression';
 import express from 'express';
 import http from 'http';
 import etag from 'etag';
@@ -14,6 +13,7 @@ import rankings from './core/ranking.js';
 import factions from './core/factions.js';
 import models from './data/models/index.js';
 import assets from './assets.json' assert { type: 'json' };
+import compression from 'compression';
 
 import SocketServer from './socket/SocketServer.js';
 import APISocketServer from './socket/APISocketServer.js';
