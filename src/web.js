@@ -13,7 +13,6 @@ import logger from './core/logger.js';
 import rankings from './core/ranking.js';
 import factions from './core/factions.js';
 import models from './data/models/index.js';
-import assets from './assets.json' assert { type: 'json' };
 
 import SocketServer from './socket/SocketServer.js';
 import APISocketServer from './socket/APISocketServer.js';
