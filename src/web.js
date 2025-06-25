@@ -9,7 +9,6 @@ import etag from 'etag';
 
 // import baseCss from './components/base.tcss';
 import forceGC from './core/forceGC.js';
-import assets from './assets.json'; // eslint-disable-line import/no-unresolved
 import logger from './core/logger.js';
 import rankings from './core/ranking.js';
 import factions from './core/factions.js';
