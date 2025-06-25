@@ -1,16 +1,13 @@
 {
-  "functions": {
-    "src/web.js": {
-      "runtime": "node tolerant",
-      "includeFiles": [
-        "src/assets.json"
-      ]
-    }
-  },
   "builds": [
     {
       "src": "src/web.js",
-      "use": "@vercel/node"
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": [
+          "src/assets.json"
+        ]
+      }
     }
   ],
   "routes": [
