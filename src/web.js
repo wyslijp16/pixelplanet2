@@ -15,8 +15,8 @@ import rankings from './core/ranking.js';
 import factions from './core/factions.js';
 import models from './data/models/index.js';
 
-import SocketServer from './socket/SocketServer';
-import APISocketServer from './socket/APISocketServer';
+import SocketServer from './socket/SocketServer.js';
+import APISocketServer from './socket/APISocketServer.js';
 
 import {
   api,
@@ -26,14 +26,14 @@ import {
   resetPassword,
   templateChunks,
 } from './routes';
-import globeHtml from './components/Globe';
-import generateMainPage from './components/Main';
+import globeHtml from './components/Globe.jsx';
+import generateMainPage from './components/Main.jsx';
 
-import { SECOND, MONTH } from './core/constants';
-import { PORT, DISCORD_INVITE } from './core/config';
+import { SECOND, MONTH } from './core/constants.js';
+import { PORT, DISCORD_INVITE } from './core/config.js';
 
-import { ccToCoords } from './utils/location';
-import { startAllCanvasLoops } from './core/tileserver';
+import { ccToCoords } from './utils/location.js';
+import { startAllCanvasLoops } from './core/tileserver.js';
 
 startAllCanvasLoops();
 
